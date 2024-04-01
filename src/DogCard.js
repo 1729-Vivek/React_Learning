@@ -75,8 +75,13 @@ import Image  from "./Image"
 //defining in such a way that in Name  Component we can access full JSX 
 import Name from './Name';
 function DogCard(props){
+    let title="this is a dog card"
     return(
         <>
+        {/* we can print like this but it should be valid javascript expression */}
+        <h2>
+            {title}
+        </h2>
         <Name>
             <h3>{props.name}</h3>
         </Name>
