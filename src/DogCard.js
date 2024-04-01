@@ -79,7 +79,7 @@ function DogCard(props){
     return(
         <>
         {/* we can print like this but it should be valid javascript expression */}
-        <h2>
+        <h2 style={{fontSize:'10px',color:'red'}}>
             {title}
         </h2>
         <Name>
