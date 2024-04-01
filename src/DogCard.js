@@ -60,16 +60,28 @@ import Image  from "./Image"
 
 
 //Implementing Props
+// function DogCard(props){
+//     return(
+//         <>
+//         <h3>{props.name}</h3>
+//         <Image src={props.image}/>
+//         {/* <Image src="https://t3.ftcdn.net/jpg/06/10/71/64/240_F_610716498_li6BIgt75TXw8B4W89pbf3VtKgHNQkXo.jpg"/> */}
+//         </>
+//         // by doing <> .... </> we do not need to wrap in div  tag -->This is also know as fragment
+//     )
+// }
+
+
+//defining in such a way that in Name  Component we can access full JSX 
+import Name from './Name';
 function DogCard(props){
     return(
         <>
-        <h3>{props.name}</h3>
+        <Name>
+            <h3>{props.name}</h3>
+        </Name>
         <Image src={props.image}/>
-        {/* <Image src="https://t3.ftcdn.net/jpg/06/10/71/64/240_F_610716498_li6BIgt75TXw8B4W89pbf3VtKgHNQkXo.jpg"/> */}
-        </>
-        // by doing <> .... </> we do not need to wrap in div  tag -->This is also know as fragment
+       </>
     )
 }
-
-
 export default DogCard
