@@ -1,24 +1,50 @@
-import logo from './logo.svg';
+
+// import DogCard from './DogCard';
+// import './App.css';
+
+// function App() {
+//   return (
+//    <div>
+//     hello 
+//     <DogCard/>
+//     <DogCard/>
+//     <DogCard/>
+//    </div>
+//   );
+// }
+
+// export default App;
+
+
+//we can do that by two ways
+
+// import {Image,DogCard} from './DogCard';
+// import './App.css';
+
+// function App() {
+//   return (
+//    <div>
+//     hello 
+//     <DogCard/>
+//     <DogCard/>
+//     <DogCard/>
+//    </div>
+//   );
+// }
+
+// export default App;
+
+import DogCard,{Image} from './DogCard';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    hello 
+    <DogCard/>
+    <DogCard/>
+    <DogCard/>
+   </div>
   );
 }
 
