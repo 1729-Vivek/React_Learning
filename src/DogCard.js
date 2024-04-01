@@ -46,14 +46,30 @@ import Image  from "./Image"
 // }
 
 //  what if we don't want to  return as wrapping div
-function DogCard(){
+// function DogCard(){
+//     return(
+//         <>
+//         <h3>Dog</h3>
+//         <Image src="https://as1.ftcdn.net/v2/jpg/05/59/27/48/1000_F_559274893_O9iSRQwTKIkAooNTglilMgx2yMcXK9Or.jpg"/>
+//         <Image src="https://t3.ftcdn.net/jpg/06/10/71/64/240_F_610716498_li6BIgt75TXw8B4W89pbf3VtKgHNQkXo.jpg"/>
+//         </>
+//         // by doing <> .... </> we do not need to wrap in div  tag -->This is also know as fragment
+//     )
+// }
+
+
+
+//Implementing Props
+function DogCard(props){
     return(
         <>
-        <h3>Dog</h3>
-        <Image/>
+        <h3>{props.name}</h3>
+        <Image src={props.image}/>
+        {/* <Image src="https://t3.ftcdn.net/jpg/06/10/71/64/240_F_610716498_li6BIgt75TXw8B4W89pbf3VtKgHNQkXo.jpg"/> */}
         </>
         // by doing <> .... </> we do not need to wrap in div  tag -->This is also know as fragment
     )
 }
+
 
 export default DogCard
