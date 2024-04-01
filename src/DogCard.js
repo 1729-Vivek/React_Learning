@@ -52,6 +52,7 @@ function DogCard(){
         <h3>Dog</h3>
         <Image/>
         </>
+        // by doing <> .... </> we do not need to wrap in div  tag -->This is also know as fragment
     )
 }
 
